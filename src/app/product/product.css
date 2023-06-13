@@ -1,0 +1,23 @@
+.product-preview {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+button {
+    background-color: #D80C2D;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    padding: 14px;
+    transition: all .25s;
+    box-shadow: 0 2px 2px 0 rgba(211, 26, 57, 0.203);
+    
+}
+
+button:hover {
+    background-color: #b7141f;
+    box-shadow: 0 2px 2px 0 rgba(216, 12, 45, 0.203);
+    cursor: pointer;
+}
