@@ -9,32 +9,32 @@ function Home() {
   const [categories, setCategories] = useState([])
 
   const slides = [
-    (<div>
-      <div>a</div>
 
-      <div>ab</div>
-    </div>),
-    (<div>
-      b
-    </div>),
-    (<div>
-      c
-    </div>),
-    (<div>
-      d
-    </div>),
-    (<div>
-      <img src='/BELTELECOMshop_logo.png' />
-    </div>),
+    (
+      <img className='main-slider-image' src='/main-slider-images/Ipad_slider.jpg' />
+    ),
+    
+    (
+      <img className='main-slider-image' src='/main-slider-images/iphone_slider.jpg' />
+    ),
+    (
+      <img className='main-slider-image' src='/main-slider-images/LGTV__slider.jpg' />
+    ),
+    (
+      <img className='main-slider-image' src='/main-slider-images/robot_slider.jpg' />
+    ),
+    (
+      <img className='main-slider-image' src='/main-slider-images/xiaomi13lite_slider.jpg' />
+    ),
 
   ]
 
   useEffect(() => {
-     setCategories(getAllCategories());
+    setCategories(getAllCategories());
   }, [])
 
   const slideClassName = "slide-home"
-  const bannerWidth = "1100"
+  const bannerWidth = "1200"
 
   return (
     <Fragment>

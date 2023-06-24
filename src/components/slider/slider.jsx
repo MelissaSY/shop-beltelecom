@@ -51,35 +51,40 @@ function Slider(props) {
                 <div className='slider-arrow slider-left-arrow'
                     onClick={goToPrevious}
                 >
-                    <FontAwesomeIcon icon={faAngleLeft} size='lg'/>
+                    <FontAwesomeIcon icon={faAngleLeft} size='lg' />
                 </div>
                 <div className='slider-arrow slider-right-arrow'
                     onClick={goToNext}>
-                    <FontAwesomeIcon icon={faAngleRight} size='lg'/>
+                    <FontAwesomeIcon icon={faAngleRight} size='lg' />
                 </div>
                 <div className='banner-content' style={getBannerStyles()}>
                     {props.slides.map((_, slideIndex) => {
                         return (
-                            <div key={slideIndex} className={props.slideClassName}>
+                            <div key={slideIndex} className={props.slideClassName} style={{width: `${props.bannerWidth}px`}}>
                                 {props.slides[slideIndex]}
                             </div>
                         )
                     })}
                 </div>
             </div>
-            <div className='slider-pagination'>
-                {
-                    props.slides.map((slide, slideIndex) => {
-                        return (
-                            <span key={slideIndex} role='button'
-                                className={slideIndex === currentIndex ?
-                                    'swiper-bullet swiper-bullet-active' :
-                                    'swiper-bullet'}
-                                onClick={() => goToIndex(slideIndex)} />
-                        )
-                    })
-                }
-            </div>
+            {
+                props.noPagination ?
+                    <></>
+                    : <div className='slider-pagination'>
+                        {
+                            props.slides.map((slide, slideIndex) => {
+                                return (
+                                    <span key={slideIndex} role='button'
+                                        className={slideIndex === currentIndex ?
+                                            'swiper-bullet swiper-bullet-active' :
+                                            'swiper-bullet'}
+                                        onClick={() => goToIndex(slideIndex)} />
+                                )
+                            })
+                        }
+                    </div>
+            }
+
         </div>
     )
 }

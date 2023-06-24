@@ -12,11 +12,13 @@ function CategoriesList(props) {
             <div className='category-list'>
                 {props.categories.map((category) => {
                     return (
-                        <Link to={`/catalog/${category.id}`}>
-                            <div className='category-card'>
+                        <Link key={category.id} to={`/catalog/${category.id}`}>
+                            <div className='category-card card-preview'>
                                 <img src={category.img} />
                                 <div className='category-name'>
-                                    {category.name}
+                                    <span>
+                                        {category.name}
+                                    </span>
                                 </div>
                             </div>
                         </Link>

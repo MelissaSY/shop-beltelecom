@@ -1,0 +1,117 @@
+.user-checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    transition: all 0.5s;
+}
+
+.user-cart-page {
+    transition: all 0.5s;
+}
+
+.checkout-input {
+    width: 100%;
+    border-radius: 10px;
+    border-style: solid;
+    padding: 14px;
+    margin: 14px;
+    border-width: 1px;
+    transition: all .25s;
+    min-height: 3.5em;
+}
+
+.checkout-input::placeholder {
+    text-transform: lowercase;
+}
+
+.checkout-input:focus {
+    background-color: #fff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(40, 37, 37, 0.203);
+}
+
+.user-checkout .error {
+    border-radius: 10px;
+    margin: 14px;
+    width: 100%;
+    color: #D80C2D;
+}
+
+.user-checkout textarea {
+    resize: vertical;
+    height: 200px;
+}
+
+.user-checkout .comment-character-counter {
+    width: 100%;
+    text-align: end;
+    color: #695b5e;
+}
+
+.user-checkout textarea .counter {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 12px;
+    width: 12px;
+}
+
+.user-cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 1200px;
+}
+
+.user-checkout .off {
+    display: none;
+}
+
+.user-checkout input[type='date'] {
+    user-select: none;
+
+}
+
+.invalid {
+    border: #D80C2D;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.name-input {
+    text-transform: capitalize;
+}
+
+.phone-number {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.phone-user-input {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-right: 0;
+}
+
+.phone-user-input>* {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.country-number {
+    width: 25%;
+    text-align: center;
+    margin-left: 0;
+}
+
+.phone-input {
+    margin-right: 0;
+}

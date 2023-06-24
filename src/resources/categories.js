@@ -1,7 +1,4 @@
-const { products } = require("../resources/products")
-
-
-const categories = [
+export default [
     {
         id: 0,
         name: 'смартфоны',
@@ -37,43 +34,43 @@ const categories = [
         name: 'роботы пылесосы',
         category: 'robot_vacuum_cleaners',
         img: '/categories-images/robot_vacuum_cleaners.png'
-    },
+    }, 
     {
         id: 7,
         name: 'вертикальные пылесосы',
         category: 'vacuum_cleaners',
         img: '/categories-images/vacuum_cleaners.png'
-    },
+    }, 
     {
         id: 8,
         name: 'планшеты',
         category: 'tablet',
         img: '/categories-images/tablet.png'
-    },
+    }, 
     {
         id: 9,
         name: 'роботы-мойщики окон',
         category: 'window_cleaning_robots',
         img: '/categories-images/window_cleaning_robots.png'
-    },
+    }, 
     {
         id: 10,
         name: 'роутеры',
         category: 'router',
         img: '/categories-images/router.png'
-    },
+    }, 
     {
         id: 11,
         name: 'кофемашины',
         category: 'coffee_machines',
         img: '/categories-images/coffee_machines.png'
-    },
+    }, 
     {
         id: 12,
         name: 'электросамокаты',
         category: 'electric_scooters',
         img: '/categories-images/electric_scooters.png'
-    },
+    }, 
     {
         id: 13,
         name: 'кондиционеры',
@@ -91,34 +88,3 @@ const categories = [
         img: '/categories-images/garden.png'
     }
 ]
-
-
-const getProduct = (id) => {
-    return products.find(product => product.id === id)
-}
-
-const getProductsCategory = (categoryId) => {
-    return products.filter(product => product.category === categoryId)
-}
-
-
-const getAllProducts = () => {
-    return products;
-}
-
-const getAllCategories = () => {
-    return categories;
-}
-
-const getCategory = (id) => {
-    return categories.find(category => category.id === id)
-}
-
-
-module.exports = {
-    getAllProducts,
-    getProduct,
-    getProductsCategory,
-    getAllCategories,
-    getCategory
-}

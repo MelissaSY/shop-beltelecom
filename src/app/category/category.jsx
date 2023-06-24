@@ -13,51 +13,54 @@ function Category() {
   useEffect(() => {
     setCategory(getCategory(parseInt(category_id)))
     setProducts(getProductsCategory(parseInt(category_id)))
-  }, [])
+  }, [category_id])
 
 
   const bannerWidth = "220"
 
   return (
     category ?
-    <div className='content-container'>
-      <div className='section-title'>
-        {category.name}
-      </div>
-      <div className='category-list'>
-        {products.map((product) => {
-          let slides = (product.imgs.map((img, ind) => {
+      <div className='content-container'>
+
+        <p className='section-title'>
+          {category.name}
+        </p>
+        <div className='category-list'>
+          {products.map((product) => {
+            let slides = (product.imgs.map((img, ind) => {
+              return (
+                <Link to={`/products/${product.id}`} key={ind} className='product-slider-link'>
+                  <img src={img.preview} className='product-slider-img' alt={product.name + '_' + ind} />
+                </Link>
+              )
+            }))
+
             return (
-              <Link to={`/products/${product.id}`} key={ind}>
-                <img src={img} />
-              </Link>
-            )
-          }))
-
-          return (
-            <div className='category-card'>
-              <div className='slider-category' style={{ width: bannerWidth + 'px' }}>
-                <Slider
-                  slides={slides}
-                  bannerWidth={bannerWidth}
-                  slideClassName={'slide-category'}
-                />
-              </div>
-
-              <Link to={`/products/${product.id}`}>
-                <div className='category-name'>
-                  {product.name}
+              <div className='card-preview product-card' key={product.id}>
+                <div className='slider-category' style={{ width: bannerWidth + 'px' }}>
+                  <Slider
+                    slides={slides}
+                    bannerWidth={bannerWidth}
+                    slideClassName={'slide-category'}
+                    noPagination={true}
+                  />
                 </div>
+                <div className='product-name'>
 
-              </Link>
-            </div>
-          )
+                  <Link to={`/products/${product.id}`}>
+                    <span >
+                      {product.name}
+                    </span>
+                  </Link>
+                </div>
+              </div>
+            )
 
-        })}
+          })}
 
+        </div>
       </div>
-    </div>
-    :<div>loading</div>
+      : <div>loading</div>
   )
 }
 

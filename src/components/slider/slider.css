@@ -33,6 +33,7 @@
     cursor: pointer;
     width: 20px;
     height: 20px;
+    transition: 100ms;
 }
 
 .slider-left-arrow {
@@ -43,22 +44,26 @@
     right: 1em;
 }
 
+.slider-arrow:hover {
+    color: #7c081b;
+}
+
 .slider-pagination {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 10%;
     width: 100%;
 }
 
 .swiper-bullet {
-    background-color: bisque;
+    background-color: #FFFFFF;
     cursor: pointer;
     width: 4%;
     height: 0.1em;
-    margin: 0 0.5em 0 0.5em;
+    margin: 0 0.6em 0 0.6em;
 }
 
 

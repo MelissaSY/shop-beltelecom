@@ -14,6 +14,8 @@ ul {
 header {
   align-items: center;
   justify-items: center;
+  
+  min-width: 1200px;
 }
 
 header img {
@@ -61,6 +63,30 @@ nav a:not(.active):hover {
   color: #000;
 }
 
+button {
+  border-radius: 10px;
+  border: none;
+  padding: 14px;
+  transition: all 0.4s;
+}
+
+button:not(:disabled) {
+  background-color: #D80C2D;
+  color: white;
+  box-shadow: 0 2px 2px 0 rgba(211, 26, 57, 0.203);
+}
+
+.button:disabled {
+  background-color: #D80C2D;
+  opacity: 25%;
+}
+
+button:not(:disabled):hover {
+  background-color: #b7141f;
+  box-shadow: 0 2px 2px 0 rgba(216, 12, 45, 0.203);
+  cursor: pointer;
+}
+
 .content-container {
   padding: 1em 4em 1em 4em;
 
@@ -70,10 +96,36 @@ nav a:not(.active):hover {
   font-weight: 700;
   font-size: 32px;
   line-height: 42px;
-  margin-bottom: 0;
-
 }
 
 .section-container {
   padding: 16px;
+}
+
+.card-preview {
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.1);
+
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card-preview:hover {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.2);
+}
+  
+.remove-button:not(:disabled) {
+  box-shadow: none;
+  background-color: transparent;
+  color: #D80C2D;
+}
+
+.remove-button:not(:disabled):hover {
+  background-color: transparent;
+  color: #b7141f;
+  box-shadow: none;
 }
