@@ -1,11 +1,10 @@
+import './product.css'
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import './product.css'
-import { getProduct } from '../../services/plug-api'
+import { getProduct, getReviewsProduct } from '../../services/plug-api'
 import Fancybox from '../../components/fancybox'
 import { useCart, useCartDispatch } from '../../contexts/cart-context'
 import { actions } from '../../reducer/cart-reducer'
-import Review from '../../components/review/review'
 import ReviewList from '../../components/review/review-list'
 
 function Product() {
@@ -14,6 +13,7 @@ function Product() {
   const [productCartNumber, setProductCartNumber] = useState(0)
 
   const [productInfo, setProductInfo] = useState(null)
+  const [reviews, setReviews] = useState([])
   const [productPrice, setProductPrice] = useState('')
 
   const dispatch = useCartDispatch()
@@ -50,7 +50,9 @@ function Product() {
 
   useEffect(() => {
     let product = getProduct(parseInt(product_id));
+    let reviews = getReviewsProduct(parseInt(product_id))
     setProductInfo(product)
+    setReviews(reviews)
     setProductPrice((product.price / 100).toFixed(2).toString())
   }, [product_id])
 
@@ -135,7 +137,7 @@ function Product() {
             </div>
           </div>
         </div>
-        <ReviewList/>
+        <ReviewList reviews={reviews} />
       </div>
       :
       <></>

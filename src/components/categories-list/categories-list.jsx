@@ -6,9 +6,9 @@ import { Link } from 'react-router-dom'
 function CategoriesList(props) {
     return (
         <div className='content-container'>
-            <div className='section-title'>
+            <h1 className='section-title'>
                 Категории
-            </div>
+            </h1>
             <div className='category-list'>
                 {props.categories.map((category) => {
                     return (

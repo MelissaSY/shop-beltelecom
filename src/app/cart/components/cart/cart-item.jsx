@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { actions } from '../../reducer/cart-reducer'
-import { useCartDispatch } from '../../contexts/cart-context'
+import { actions } from '../../../../reducer/cart-reducer'
+import { useCartDispatch } from '../../../../contexts/cart-context'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMinus, faPlus, faTrashCan } from '@fortawesome/free-solid-svg-icons'
 

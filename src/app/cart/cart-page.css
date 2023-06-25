@@ -33,9 +33,9 @@
 
 .user-checkout .error {
     border-radius: 10px;
-    margin: 14px;
     width: 100%;
     color: #D80C2D;
+    margin-left: 0;
 }
 
 .user-checkout textarea {
@@ -62,6 +62,7 @@
     flex-direction: column;
     align-items: center;
     min-width: 1200px;
+    transition: all 0.5s;
 }
 
 .user-checkout .off {
@@ -74,9 +75,7 @@
 }
 
 .invalid {
-    border: #D80C2D;
-    border-style: solid;
-    border-width: 1px;
+    border-color: #D80C2D;
 }
 
 .name-input {
@@ -99,11 +98,6 @@
     align-items: flex-start;
     width: 100%;
     margin-right: 0;
-}
-
-.phone-user-input>* {
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 .country-number {

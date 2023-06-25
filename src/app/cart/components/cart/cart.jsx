@@ -1,8 +1,8 @@
 import React, { Fragment, useEffect, useState } from 'react'
 import CartItem from './cart-item'
 import './cart.css'
-import { useCartDispatch } from '../../contexts/cart-context'
-import { actions } from '../../reducer/cart-reducer'
+import { useCartDispatch } from '../../../../contexts/cart-context'
+import { actions } from '../../../../reducer/cart-reducer'
 
 function Cart(props) {
     const [totalPrice, setTotalPrice] = useState(0)

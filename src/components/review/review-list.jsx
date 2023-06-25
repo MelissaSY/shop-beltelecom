@@ -4,23 +4,22 @@ import './review.css'
 
 function ReviewList(props) {
     return (
-        <Fragment>
-            <div className='review-list'>
-                <span className='section-title'>
-                    Отзывы
-                </span>
-                <Review
-                    userName='Melissa'
-                    content=' dct jr jnkbxyj ghjcnj cegth dcdct jr jnkdct jr jnkbxyj ghjcnj cegthdct jr jnkbxyj ghjcnj cegthbxyj ghjcnj cegthdct jr jnkbxyj ghjcnj cegtht jr jnkbxyj ghjcnj cegth dct jr jnkbxyj ghjcnj cegth dct jr jnkbxyj ghjcnj cegth'
-                    avatar='/categories-images/phone.png'
-                />
-                <Review
-                    userName='Melissa'
-                    content=' dct jr jnkbxyj ghjcnj cegth'
-                    avatar='/categories-images/phone.png'
-                />
-            </div>
-        </Fragment>
+
+        <div className='review-list'>
+            <span className='section-title'>
+                Отзывы
+            </span>
+            {props.reviews.map((review, ind) => {
+                return (
+                    <Review
+                        userName={review.userName}
+                        avatar={review.avatar}
+                        content={review.content}
+                        key={ind}
+                    />
+                )
+            })}
+        </div>
     )
 }
 

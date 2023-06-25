@@ -102,7 +102,7 @@ function PhoneInput(props) {
                 />
             </div>
             <p id='phone-error' className={!phoneFocus && !props.validPhoneNumber ? 'error' : 'off'}>
-                инвалид намбер
+                Введен неверный номер телефона
             </p>
         </div>
     )

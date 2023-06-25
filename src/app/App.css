@@ -16,6 +16,10 @@ header {
   justify-items: center;
   
   min-width: 1200px;
+  position: sticky;
+  top: 0;
+  background-color: #FFF;
+  z-index: 9;
 }
 
 header img {
@@ -29,6 +33,10 @@ header nav {
   box-shadow: 0 2px 0 0 rgba(216, 12, 45, 0.203);
 
   padding: 1em 4em 1em 4em;
+}
+
+.page-content {
+  min-width: 1200px;
 }
 
 nav a {
@@ -47,11 +55,8 @@ nav li {
 nav ul {
   justify-content: right;
   flex-wrap: wrap;
-
   margin: 0;
-
   width: 100%;
-
   font-weight: bold;
 }
 
@@ -88,8 +93,8 @@ button:not(:disabled):hover {
 }
 
 .content-container {
-  padding: 1em 4em 1em 4em;
-
+  padding: 35px;
+  min-width: 1200px;
 }
 
 .section-title {
