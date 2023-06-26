@@ -8,6 +8,8 @@ import { actions } from '../../reducer/cart-reducer'
 import ReviewList from '../../components/review/review-list'
 
 function Product() {
+  const domain = '/shop-beltelecom'
+  
   const { product_id } = useParams()
 
   const [productCartNumber, setProductCartNumber] = useState(0)
@@ -63,7 +65,7 @@ function Product() {
     } else {
       setProductCartNumber(0)
     }
-  }, [cart])
+  }, [cart, product_id])
 
   return (
     productInfo ?
@@ -74,7 +76,7 @@ function Product() {
         <div className='product-preview'>
           <div className='product-images'>
             <div className='product-main-preview '>
-              {<img src={productInfo.imgs[0].img} alt='main' />}
+              {<img src={domain + productInfo.imgs[0].img} alt='main' />}
             </div>
             <div className='product-preview-images'>
               <Fancybox options={{
@@ -85,8 +87,8 @@ function Product() {
                 {
                   productInfo.imgs.map((img, imgInd) => {
                     return (
-                      <a key={imgInd} className='card-preview' data-fancybox="gallery" href={img.img}>
-                        <img src={img.preview} alt={productInfo.name + '_' + imgInd} />
+                      <a key={imgInd} className='card-preview' data-fancybox="gallery" href={domain + img.img}>
+                        <img src={domain + img.preview} alt={productInfo.name + '_' + imgInd} />
                       </a>
                     )
                   })

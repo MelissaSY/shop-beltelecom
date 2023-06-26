@@ -6,6 +6,8 @@ import { getCategory, getProductsCategory } from '../../services/plug-api'
 
 function Category() {
 
+  const domain = '/shop-beltelecom'
+
   const { category_id } = useParams()
   const [category, setCategory] = useState(null)
   const [products, setProducts] = useState([])
@@ -29,8 +31,8 @@ function Category() {
           {products.map((product) => {
             let slides = (product.imgs.map((img, ind) => {
               return (
-                <Link to={`/products/${product.id}`} key={ind} className='product-slider-link'>
-                  <img src={img.preview} className='product-slider-img' alt={product.name + '_' + ind} />
+                <Link to={`${domain}/products/${product.id}`} key={ind} className='product-slider-link'>
+                  <img src={domain + img.preview} className='product-slider-img' alt={product.name + '_' + ind} />
                 </Link>
               )
             }))
@@ -47,7 +49,7 @@ function Category() {
                 </div>
                 <div className='product-name'>
 
-                  <Link to={`/products/${product.id}`}>
+                  <Link to={`${domain}/products/${product.id}`}>
                     <span >
                       {product.name}
                     </span>

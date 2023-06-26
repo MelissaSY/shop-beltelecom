@@ -3,10 +3,13 @@ import React from 'react'
 import './review.css'
 
 function Review(props) {
+
+    const domain = '/shop-beltelecom'
+
     return (
         <div className='review-container card-preview'>
             <div className='review-avatar'>
-                <img src={props.avatar}/>
+                <img src={domain + props.avatar} alt={props.userName}/>
             </div>
             <div className='review-text'>
                 <span className='review-user'>

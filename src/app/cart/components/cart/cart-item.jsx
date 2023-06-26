@@ -7,6 +7,7 @@ import { faMinus, faPlus, faTrashCan } from '@fortawesome/free-solid-svg-icons'
 
 function CartItem(props) {
 
+    const domain = '/shop-beltelecom'
     const [cartItem, setCartItem] = useState(null)
 
     const dispatch = useCartDispatch()
@@ -41,14 +42,14 @@ function CartItem(props) {
             <tr>
                 <td>
                     <div className='cart-product-image'>
-                        <Link to={`/products/${cartItem.product.id}`}>
-                            <img src={cartItem.product.imgs[0].preview} alt={cartItem.product.name} />
+                        <Link to={`${domain}/products/${cartItem.product.id}`}>
+                            <img src={domain + cartItem.product.imgs[0].preview} alt={cartItem.product.name} />
                         </Link>
                     </div>
                 </td>
                 <td>
                     <div className='cart-product-name'>
-                        <Link to={`/products/${cartItem.product.id}`}>
+                        <Link to={`${domain}/products/${cartItem.product.id}`}>
                             <span>{cartItem.product.name}</span>
                         </Link>
                     </div>

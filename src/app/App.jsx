@@ -18,12 +18,12 @@ function App() {
           <Header />
           <div className='page-content'>
             <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/shop-info' element={<ShopInfo />} />
-              <Route path='/catalog/:category_id' element={<Category />} />
-              <Route path='/products/:product_id' element={<Product />} />
-              <Route path='/contacts' element={<Contacts />} />
-              <Route path='/cart' element={<Cart />} />
+              <Route path='/shop-beltelecom/' element={<Home />} />
+              <Route path='/shop-beltelecom/shop-info' element={<ShopInfo />} />
+              <Route path='/shop-beltelecom/catalog/:category_id' element={<Category />} />
+              <Route path='/shop-beltelecom/products/:product_id' element={<Product />} />
+              <Route path='/shop-beltelecom/contacts' element={<Contacts />} />
+              <Route path='/shop-beltelecom/cart' element={<Cart />} />
             </Routes>
           </div>
         </BrowserRouter>

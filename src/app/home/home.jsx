@@ -8,23 +8,25 @@ function Home() {
 
   const [categories, setCategories] = useState([])
 
+  const domain = '/shop-beltelecom/'
+
   const slides = [
 
     (
-      <img className='main-slider-image' src='/main-slider-images/Ipad_slider.jpg' />
+      <img className='main-slider-image' alt='slide_1' src= {`${domain}/main-slider-images/Ipad_slider.jpg`}  />
     ),
-    
+
     (
-      <img className='main-slider-image' src='/main-slider-images/iphone_slider.jpg' />
-    ),
-    (
-      <img className='main-slider-image' src='/main-slider-images/LGTV__slider.jpg' />
+      <img className='main-slider-image' alt='slide_2' src={`${domain}/main-slider-images/iphone_slider.jpg`} />
     ),
     (
-      <img className='main-slider-image' src='/main-slider-images/robot_slider.jpg' />
+      <img className='main-slider-image' alt='slide_3' src={`${domain}/main-slider-images/LGTV__slider.jpg`} />
     ),
     (
-      <img className='main-slider-image' src='/main-slider-images/xiaomi13lite_slider.jpg' />
+      <img className='main-slider-image' alt='slide_4' src={`${domain}/main-slider-images/robot_slider.jpg`} />
+    ),
+    (
+      <img className='main-slider-image' alt='slide_5' src={`${domain}/main-slider-images/xiaomi13lite_slider.jpg`} />
     ),
 
   ]
