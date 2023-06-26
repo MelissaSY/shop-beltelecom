@@ -1,0 +1,374 @@
+[
+    {
+        "id": 1,
+        "name": "Apple Iphone 14 128GB",
+        "imgs": [
+            {
+                "preview": "/product-images/Apple Iphone 14 128GB/iphone14_blue.png",
+                "img": "/product-images/Apple Iphone 14 128GB/iphone14_blue.png"
+            },
+            {
+                "preview": "/product-images/Apple Iphone 14 128GB/iphone14_midnight.png",
+                "img": "/product-images/Apple Iphone 14 128GB/iphone14_midnight.png"
+            },
+            {
+                "preview": "/product-images/Apple Iphone 14 128GB/iphone14_purple.png",
+                "img": "/product-images/Apple Iphone 14 128GB/iphone14_purple.png"
+            },
+            {
+                "preview": "/product-images/Apple Iphone 14 128GB/iphone14_starlight.png",
+                "img": "/product-images/Apple Iphone 14 128GB/iphone14_starlight.png"
+            },
+            {
+                "preview": "/product-images/Apple Iphone 14 128GB/iphone-14-128gb.png",
+                "img": "/product-images/Apple Iphone 14 128GB/iphone-14-128gb.png"
+            }
+        ],
+        "price": 396000,
+        "category": 0,
+        "details": [
+            {
+                "name": "Процессор",
+                "value": "Apple A15 Bionic"
+            },
+            {
+                "name": "Цвет",
+                "value": "Полуночный (Midnight black), Синий (Blue), Фиолетовый (Purple), Звездный (Starlight)"
+            },
+            {
+                "name": "Размер",
+                "value": "6,1 дюйма"
+            },
+            {
+                "name": "Bluetooth",
+                "value": "5.3"
+            },
+            {
+                "name": "Гарантия",
+                "value": "12 месяцев"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "HONOR 70",
+        "imgs": [
+            {
+                "preview": "/product-images/HONOR 70/honor70_green.png",
+                "img": "/product-images/HONOR 70/honor70_green.png"
+            },
+            {
+                "preview": "/product-images/HONOR 70/honor70_green_2.png",
+                "img": "/product-images/HONOR 70/honor70_green_2.png"
+            }
+        ],
+        "price": 174000,
+        "category": 0,
+        "details": [
+            {
+                "name": "Процессор",
+                "value": "Qualcomm Snapdragon 778G+"
+            },
+            {
+                "name": "Цвет",
+                "value": "изумрудный зеленый"
+            },
+            {
+                "name": "Размер",
+                "value": "6,67 дюйма"
+            },
+            {
+                "name": "Bluetooth",
+                "value": "5.2"
+            },
+            {
+                "name": "Гарантия",
+                "value": "12 месяцев"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "HONOR X9a",
+        "imgs": [
+            {
+                "preview": "/product-images/HONOR X9a/HonorX9A_1.png",
+                "img": "/product-images/HONOR X9a/HonorX9A_1.png"
+            },
+            {
+                "preview": "/product-images/HONOR X9a/HonorX9A_4.png",
+                "img": "/product-images/HONOR X9a/HonorX9A_4.png"
+            },
+            {
+                "preview": "/product-images/HONOR X9a/HonorX9A_black.png",
+                "img": "/product-images/HONOR X9a/HonorX9A_black.png"
+            }
+        ],
+        "price": 121200,
+        "category": 0,
+        "details": [
+            {
+                "name": "Процессор",
+                "value": "Qualcomm Snapdragon 695 5G"
+            },
+            {
+                "name": "Цвет",
+                "value": "Изумрудно-зеленый (Emerald Green), Полночный черный (Midnight Black), Титановый серебристый (Titanium Silver)"
+            },
+            {
+                "name": "Размер",
+                "value": "6,67 дюйма"
+            },
+            {
+                "name": "Bluetooth",
+                "value": "5.1"
+            },
+            {
+                "name": "Гарантия",
+                "value": "12 месяцев"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "HONOR X8a",
+        "imgs": [
+            {
+                "preview": "/product-images/HONOR X8a/honorx8a_black.png",
+                "img": "/product-images/HONOR X8a/honorx8a_black.png"
+            },
+            {
+                "preview": "/product-images/HONOR X8a/honorx8a_black_2.png",
+                "img": "/product-images/HONOR X8a/honorx8a_black_2.png"
+            },
+            {
+                "preview": "/product-images/HONOR X8a/honorx8a_cyan.png",
+                "img": "/product-images/HONOR X8a/honorx8a_cyan.png"
+            },
+            {
+                "preview": "/product-images/HONOR X8a/honorx8a_cyan_2.png",
+                "img": "/product-images/HONOR X8a/honorx8a_cyan_2.png"
+            },
+            {
+                "preview": "/product-images/HONOR X8a/honorx8a_silver.png",
+                "img": "/product-images/HONOR X8a/honorx8a_silver.png"
+            },
+            {
+                "preview": "/product-images/HONOR X8a/honorx8a_silver_2.png",
+                "img": "/product-images/HONOR X8a/honorx8a_silver_2.png"
+            }
+        ],
+        "price": 84720,
+        "category": 0,
+        "details": [
+            {
+                "name": "Процессор",
+                "value": "Mediatek Helio G88"
+            },
+            {
+                "name": "Цвет",
+                "value": "Полночный черный (Midnight Black), Небесно-голубой (Cyan Lake), Титановый серебристый (Titanium Silver)"
+            },
+            {
+                "name": "Размер",
+                "value": "6,67 дюйма"
+            },
+            {
+                "name": "Bluetooth",
+                "value": "5.1"
+            },
+            {
+                "name": "Гарантия",
+                "value": "12 месяцев"
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "HONOR X7a",
+        "imgs": [
+            {
+                "preview": "/product-images/HONOR X7a/HonorX7A_1.png",
+                "img": "/product-images/HONOR X7a/HonorX7A_1.png"
+            },
+            {
+                "preview": "/product-images/HONOR X7a/HonorX7A_2.png",
+                "img": "/product-images/HONOR X7a/HonorX7A_2.png"
+            },
+            {
+                "preview": "/product-images/HONOR X7a/HonorX7A_3.png",
+                "img": "/product-images/HONOR X7a/HonorX7A_3.png"
+            },
+            {
+                "preview": "/product-images/HONOR X7a/HonorX7A_4.png",
+                "img": "/product-images/HONOR X7a/HonorX7A_4.png"
+            },
+            {
+                "preview": "/product-images/HONOR X7a/HonorX7A_5.png",
+                "img": "/product-images/HONOR X7a/HonorX7A_5.png"
+            },
+            {
+                "preview": "/product-images/HONOR X7a/HonorX7A_6.png",
+                "img": "/product-images/HONOR X7a/HonorX7A_6.png"
+            }
+        ],
+        "price": 66000,
+        "category": 0,
+        "details": [
+            {
+                "name": "Процессор",
+                "value": "Mediatek Helio G37"
+            },
+            {
+                "name": "Цвет",
+                "value": "Полночный черный (Midnight Black), Небесно-голубой (Cyan Lake), Титановый серебристый (Titanium Silver)"
+            },
+            {
+                "name": "Размер",
+                "value": "6,75 дюйма"
+            },
+            {
+                "name": "Bluetooth",
+                "value": "5.1"
+            },
+            {
+                "name": "Гарантия",
+                "value": "12 месяцев"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Sony PS5",
+        "imgs": [
+            {
+                "preview": "/product-images/Sony PS5/PS5_1.png",
+                "img": "/product-images/Sony PS5/PS5_1.png"
+            },
+            {
+                "preview": "/product-images/Sony PS5/PS5_2.png",
+                "img": "/product-images/Sony PS5/PS5_2.png"
+            },
+            {
+                "preview": "/product-images/Sony PS5/PS5_3.png",
+                "img": "/product-images/Sony PS5/PS5_3.png"
+            }
+        ],
+        "price": 66000,
+        "category": 1,
+        "details": [
+            {
+                "name": "Процессор",
+                "value": "Mediatek Helio G37"
+            },
+            {
+                "name": "Цвет",
+                "value": "Полночный черный (Midnight Black), Небесно-голубой (Cyan Lake), Титановый серебристый (Titanium Silver)"
+            },
+            {
+                "name": "Размер",
+                "value": "6,75 дюйма"
+            },
+            {
+                "name": "Bluetooth",
+                "value": "5.1"
+            },
+            {
+                "name": "Гарантия",
+                "value": "12 месяцев"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Sony PS5",
+        "imgs": [
+            {
+                "preview": "/product-images/Sven PS-800/sven_ps800.png",
+                "img": "/product-images/Sven PS-800/sven_ps800.png"
+            },
+            {
+                "preview": "/product-images/Sven PS-800/sven_ps800_2.png",
+                "img": "/product-images/Sven PS-800/sven_ps800_2.png"
+            }
+        ],
+        "price": 66000,
+        "category": 2,
+        "details": [
+            {
+                "name": "Процессор",
+                "value": "Mediatek Helio G37"
+            },
+            {
+                "name": "Цвет",
+                "value": "Полночный черный (Midnight Black), Небесно-голубой (Cyan Lake), Титановый серебристый (Titanium Silver)"
+            },
+            {
+                "name": "Размер",
+                "value": "6,75 дюйма"
+            },
+            {
+                "name": "Bluetooth",
+                "value": "5.1"
+            },
+            {
+                "name": "Гарантия",
+                "value": "12 месяцев"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "POCO X5",
+        "imgs": [
+            {
+                "preview": "/product-images/POCO X5/poco_x5_black.png",
+                "img": "/product-images/POCO X5/poco_x5_black.png"
+            },
+            {
+                "preview": "/product-images/POCO X5/poco_x5_black_2.png",
+                "img": "/product-images/POCO X5/poco_x5_black_2.png"
+            },
+            {
+                "preview": "/product-images/POCO X5/poco_x5_blue.png",
+                "img": "/product-images/POCO X5/poco_x5_blue.png"
+            },
+            {
+                "preview": "/product-images/POCO X5/poco_x5_blue_2.png",
+                "img": "/product-images/POCO X5/poco_x5_blue_2.png"
+            },
+            {
+                "preview": "/product-images/POCO X5/poco_x5_green.png",
+                "img": "/product-images/POCO X5/poco_x5_green.png"
+            },
+            {
+                "preview": "/product-images/POCO X5/poco_x5_green_2.png",
+                "img": "/product-images/POCO X5/poco_x5_green_2.png"
+            }
+        ],
+        "price": 66000,
+        "category": 0,
+        "details": [
+            {
+                "name": "Процессор",
+                "value": "Mediatek Helio G37"
+            },
+            {
+                "name": "Цвет",
+                "value": "Полночный черный (Midnight Black), Небесно-голубой (Cyan Lake), Титановый серебристый (Titanium Silver)"
+            },
+            {
+                "name": "Размер",
+                "value": "6,75 дюйма"
+            },
+            {
+                "name": "Bluetooth",
+                "value": "5.1"
+            },
+            {
+                "name": "Гарантия",
+                "value": "12 месяцев"
+            }
+        ]
+    }
+]

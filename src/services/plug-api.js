@@ -1,29 +1,37 @@
-const { categories } = require("../resources/categories")
-const { products } = require("../resources/products")
-const { reviews } = require("../resources/reviews")
-
-const getProduct = (id) => {
+const getProduct = async (id) => {
+    const response  = await fetch('/shop-beltelecom/resources/products.json')
+    const products = await response.json()
     return products.find(product => product.id === id)
 }
 
-const getProductsCategory = (categoryId) => {
-    return products.filter(product => product.category === categoryId)
+const getProductsCategory = async (categoryId) => {
+    const response  = await fetch('/shop-beltelecom/resources/products.json')
+    const products = await response.json()
+    return products.filter(product => product.category === categoryId);
 }
 
-const getAllProducts = () => {
+const getAllProducts = async () => {
+    const response  = await fetch('/shop-beltelecom/resources/products.json')
+    const products = await response.json()
     return products;
 }
 
-const getAllCategories = () => {
+const getAllCategories = async () => {
+    const response  = await fetch('/shop-beltelecom/resources/categories.json')
+    const categories = await response.json()
     return categories;
 }
 
-const getCategory = (id) => {
+const getCategory = async (id) => {
+    const response  = await fetch('/shop-beltelecom/resources/categories.json')
+    
+    const categories = await response.json()
     return categories.find(category => category.id === id)
 }
 
-const getReviewsProduct = (productId) => {
-    console.log(productId)
+const getReviewsProduct = async (productId) => {
+    const response  = await fetch('/shop-beltelecom/resources/reviews.json')
+    const reviews = await response.json()
     return reviews.filter(item => item.productId === productId)
 }
 

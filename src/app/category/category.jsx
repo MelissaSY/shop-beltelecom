@@ -13,8 +13,14 @@ function Category() {
   const [products, setProducts] = useState([])
 
   useEffect(() => {
-    setCategory(getCategory(parseInt(category_id)))
-    setProducts(getProductsCategory(parseInt(category_id)))
+    getCategory(parseInt(category_id))
+      .then((result) => {
+        setCategory(result)
+      })
+    getProductsCategory(parseInt(category_id))
+      .then((result) => {
+        setProducts(result)
+      })
   }, [category_id])
 
 

@@ -9,7 +9,7 @@ import ReviewList from '../../components/review/review-list'
 
 function Product() {
   const domain = '/shop-beltelecom'
-  
+
   const { product_id } = useParams()
 
   const [productCartNumber, setProductCartNumber] = useState(0)
@@ -51,11 +51,16 @@ function Product() {
   }
 
   useEffect(() => {
-    let product = getProduct(parseInt(product_id));
-    let reviews = getReviewsProduct(parseInt(product_id))
-    setProductInfo(product)
-    setReviews(reviews)
-    setProductPrice((product.price / 100).toFixed(2).toString())
+    getProduct(parseInt(product_id))
+      .then((result) => {
+        setProductInfo(result)
+        setProductPrice((result.price / 100).toFixed(2).toString())
+      })
+
+    getReviewsProduct(parseInt(product_id))
+      .then((result) => {
+        setReviews(result)
+      })
   }, [product_id])
 
   useEffect(() => {

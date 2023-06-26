@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import './cart-page.css'
 import { getProduct } from '../../services/plug-api'
 import { useCart, useCartDispatch } from '../../contexts/cart-context'
@@ -28,16 +28,25 @@ function CartPage() {
     setModalActive(true)
   }
 
-  useEffect(() => {
-    setCartItemsInfo(
-      cartItems.map((cartProduct) => {
-        return {
-          product: getProduct(cartProduct.id),
-          count: cartProduct.count
-        }
-      })
-    )
+  const getCartProducts = useCallback(async () => {
+
+    const items = await Promise.all(cartItems.map(async (cartProduct) => {
+      const response = await getProduct(cartProduct.id)
+      return {
+        product: response,
+        count: cartProduct.count
+      }
+    }))
+    return items
   }, [cartItems])
+
+  useEffect(() => {
+    getCartProducts()
+      .then((products) => {
+        setCartItemsInfo(products)
+      })
+
+  }, [getCartProducts])
 
 
   return (

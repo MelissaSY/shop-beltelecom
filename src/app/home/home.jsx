@@ -8,14 +8,13 @@ function Home() {
 
   const [categories, setCategories] = useState([])
 
-  const domain = '/shop-beltelecom/'
+  const domain = '/shop-beltelecom'
 
   const slides = [
 
     (
-      <img className='main-slider-image' alt='slide_1' src= {`${domain}/main-slider-images/Ipad_slider.jpg`}  />
+      <img className='main-slider-image' alt='slide_1' src={`${domain}/main-slider-images/Ipad_slider.jpg`} />
     ),
-
     (
       <img className='main-slider-image' alt='slide_2' src={`${domain}/main-slider-images/iphone_slider.jpg`} />
     ),
@@ -32,7 +31,8 @@ function Home() {
   ]
 
   useEffect(() => {
-    setCategories(getAllCategories());
+    getAllCategories()
+      .then((result) => { setCategories(result) })
   }, [])
 
   const slideClassName = "slide-home"
