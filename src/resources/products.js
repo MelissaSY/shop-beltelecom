@@ -81,20 +81,16 @@ export const  products = [{
     name: 'HONOR X9a',
     imgs: [
         {
-            preview: '/product-images/-2_200.jpg',
-            img: '/product-images/-2_600.jpg'
+            preview: '/product-images/HONOR X9a/HonorX9A_1.png',
+            img: '/product-images/HONOR X9a/HonorX9A_1.png'
         },
         {
-            preview: '/product-images/-3_200.jpg',
-            img: '/product-images/-3_600.jpg'
+            preview: '/product-images/HONOR X9a/HonorX9A_4.png',
+            img: '/product-images/HONOR X9a/HonorX9A_4.png'
         },
         {
-            preview: '/product-images/-4_200.jpg',
-            img: '/product-images/-4_600.jpg'
-        },
-        {
-            preview: '/product-images/-7_200.jpg',
-            img: '/product-images/-7_600.jpg'
+            preview: '/product-images/HONOR X9a/HonorX9A_black.png',
+            img: '/product-images/HONOR X9a/HonorX9A_black.png'
         },
     ],
     price: 121200,
