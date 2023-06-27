@@ -1,0 +1,23 @@
+{
+    "global": [{
+        "type": "tel",
+        "value": "123"
+    }],
+    "business": [{
+        "type": "tel",
+        "value": "+375 17 2171005"
+    }, {
+        "type": "fax",
+        "value": "+375 17 3274422"
+    }, {
+        "type": "email",
+        "value": "info@main.beltelecom.by"
+    }, {
+        "type": "address",
+        "value" : "ул. Энгельса, 6, 220030, г. Минск, Республика Беларусь"
+    }],
+    "mass": [{
+        "type": "email",
+        "value": "ekaterinamd@main.beltelecom.by"
+    }]
+}

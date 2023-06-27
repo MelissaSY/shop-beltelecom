@@ -1,0 +1,11 @@
+.info span {
+    font-weight: bold;
+}
+
+.info p {
+    margin-bottom: 10px;
+}
+
+.info {
+    max-width: 1200px;
+}

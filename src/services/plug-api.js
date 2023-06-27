@@ -36,11 +36,25 @@ const getReviewsProduct = async (productId) => {
 }
 
 
+const getAllContacts = async () => {
+    const response  = await fetch('/shop-beltelecom/resources/contacts.json')
+    const contacts = await response.json()
+    return contacts
+}
+
+const getShopInfo = async () => {
+    const response  = await fetch('/shop-beltelecom/resources/info.json')
+    const info = await response.json()
+    return info
+}
+
 module.exports = {
     getAllProducts,
     getProduct,
     getProductsCategory,
     getAllCategories,
     getCategory,
-    getReviewsProduct
+    getReviewsProduct,
+    getAllContacts,
+    getShopInfo
 }

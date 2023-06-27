@@ -1,0 +1,7 @@
+.contact-section::first-letter {
+    text-transform: capitalize;
+}
+
+.contact {
+    padding-left: 10px;
+}
