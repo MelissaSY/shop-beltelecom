@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shop-beltelecom/static/css/main.2106cbfe.css",
+    "main.js": "/shop-beltelecom/static/js/main.841739e6.js",
+    "index.html": "/shop-beltelecom/index.html",
+    "main.2106cbfe.css.map": "/shop-beltelecom/static/css/main.2106cbfe.css.map",
+    "main.841739e6.js.map": "/shop-beltelecom/static/js/main.841739e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2106cbfe.css",
+    "static/js/main.841739e6.js"
+  ]
+}
